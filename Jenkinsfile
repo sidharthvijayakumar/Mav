@@ -1,7 +1,7 @@
 node{
   stage('SCM Checout'){
    
-  git 'https://github.com/sidharthvijayakumar/Mav/NewJenkins'
+  git 'https://github.com/sidharthvijayakumar/Mav'
   }
   stage('Comiple-Package'){
      def mvnHome = tool name: 'Maven', type: 'maven'
