@@ -18,4 +18,5 @@ node{
         always {
             archiveArtifacts artifacts: 'generatedFile.txt', onlyIfSuccessful: true
         }
+    }
 }
