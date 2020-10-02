@@ -8,6 +8,6 @@ node{
     sh "${mvnHome}/bin/mvn clean install"
   }
   stage("publish to s3") {
-s3CopyArtifact buildSelector: lastSuccessful(), excludeFilter: '/target', filter: '/var/lib/jenkins/workspace/CiPipelineJob/target/*.jar', flatten: false, optional: false, projectName: 'CiPipelineJob', target: ''  }
-        
+s3CopyArtifact buildSelector: lastSuccessful(), excludeFilter: '/target', filter: '/var/lib/jenkins/workspace/CiPipelineJob/target/*.jar', flatten: true, optional: false, projectName: 'CiPipelineJob', target: ''
+  }
 }
