@@ -14,7 +14,7 @@ node{
   stage("deploy"){
       sshagent(['Deploy_war']) {
     // some block
-        }
+}
   }
   
 }
