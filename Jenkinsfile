@@ -12,7 +12,7 @@ node{
   
   }
   stage("deploy"){
-      sshagent(['Deploy_war']) {
+    sshagent(['deploy']) {
     // some block
 }
   }
