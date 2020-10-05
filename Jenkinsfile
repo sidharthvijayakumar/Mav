@@ -12,7 +12,7 @@ node{
   
   }
   stage("deploy"){
-    sshagent(['deploy']) {
+    sshagent(credentials: ['deploy'], ignoreMissing: true) {
     // some block
 }
   }
